@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/training_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="pavelnovak.com.mhandtrainer.fragments.TrainingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <pavelnovak.com.mhandtrainer.PresetRadioGroup
+            android:id="@+id/preset_times_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/preset_radio_group_margin"
+            android:layout_marginBottom="@dimen/preset_radio_group_margin_bottom"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:presetRadioCheckedId="@+id/preset_time_value_button_60">
+
+            <pavelnovak.com.mhandtrainer.PresetValueButton
+                android:id="@+id/preset_times_value_button_30"
+                style="@style/PresetLayoutButton"
+                android:layout_width="@dimen/preset_value_button_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:presetButtonUnitText="@string/unit_times"
+                app:presetButtonValueText="@string/title_times_preset_30" />
+
+            <pavelnovak.com.mhandtrainer.PresetValueButton
+                android:id="@+id/preset_times_value_button_45"
+                style="@style/PresetLayoutButton"
+                android:layout_width="@dimen/preset_value_button_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:presetButtonUnitText="@string/unit_times"
+                app:presetButtonValueText="@string/title_times_preset_45" />
+
+            <pavelnovak.com.mhandtrainer.PresetValueButton
+                android:id="@+id/preset_times_value_button_60"
+                style="@style/PresetLayoutButton"
+                android:layout_width="@dimen/preset_value_button_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:presetButtonUnitText="@string/unit_times"
+                app:presetButtonValueText="@string/title_times_preset_60" />
+
+        </pavelnovak.com.mhandtrainer.PresetRadioGroup>
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_view"
+            android:textSize="@dimen/time_text_size"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/CustomProgressBarHorizontal"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/margin_view"
+            android:layout_marginEnd="@dimen/margin_view"
+            android:layout_height="@dimen/progress_bar_height"
+            android:layout_marginBottom="@dimen/margin_view"
+            android:indeterminate="false"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/progress_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_view"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_view"
+            android:textSize="@dimen/progress_tv_text_size" />
+
+        <EditText
+            android:id="@+id/comment_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginStart="@dimen/margin_view"
+            android:hint="@string/comment_hint"
+            android:layout_marginEnd="@dimen/margin_view"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:padding="@dimen/padding_view"
+            android:maxLength="@integer/comment_max_length" />
+
+        <Button
+            android:id="@+id/start_button"
+            android:background="@drawable/btn_login_background"
+            android:layout_marginTop="@dimen/margin_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/color_white"
+            android:layout_marginStart="@dimen/margin_view"
+            android:layout_marginEnd="@dimen/margin_view"
+            android:text="@string/start" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+

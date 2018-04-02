@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_side_title_text">5dp</dimen>
+    <dimen name="padding_top_title_text">10dp</dimen>
+    <dimen name="text_size_time_preset_unit">14sp</dimen>
+    <dimen name="margin_view">10dp</dimen>
+    <dimen name="padding_view">10dp</dimen>
+    <dimen name="progress_bar_height">50dp</dimen>
+    <dimen name="drawer_width">240dp</dimen>
+    <dimen name="drawer_divider_height">3dp</dimen>
+    <dimen name="time_text_size">40sp</dimen>
+    <dimen name="progress_tv_text_size">20sp</dimen>
+    <dimen name="preset_value_button_width">0dp</dimen>
+    <dimen name="preset_radio_group_margin">3dp</dimen>
+    <dimen name="preset_radio_group_margin_bottom">13dp</dimen>
+    <dimen name="statistic_padding">16dp</dimen>
+</resources>
